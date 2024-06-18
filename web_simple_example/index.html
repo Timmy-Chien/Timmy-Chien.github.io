@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("p").click(function(){
+        $(this).hide();
+      }); 
+      $("h1").dblclick(function(){
+  	  	$(this).fadeOut("slow");
+      });
+      $("h3").mouseenter(function(){
+  	    $("h1").fadeIn(895);
+	  });
+    });
+    </script>
     <title>Page Title</title>
     <link rel="stylesheet" href="src/style.css">
 </head>
@@ -10,7 +24,7 @@
 <p>This is a paragraph.</p>
 
 <h2>This is a smaller Heading</h2>
-<p>This is a paragraph...<br>with break<br>lines</p>
+<p>點p消失<br>雙擊h1淡出<br>滑鼠經過h3，h1淡入</p>
 
 <h3> item list </h3>
 <ul>
